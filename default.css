@@ -729,18 +729,18 @@
 	.column1_2
 	{
 		display:inline-block;
-		padding:15px;
+		padding:10px;
 		margin:auto;
-		width: 460px;
+		width: 370px;
 		float: left;
 	}
 			
 	.column2_2
 	{
 		display:inline-block;
-		padding:15px;
+		padding:10px;
 		margin:auto;
-		width: 460px;
+		width: 370px;
 		background: rgba(243,243,243,0.5);
 	}
 	
@@ -750,7 +750,7 @@
 		display:inline-block;
 		padding:15px 15px 15px 15px;
 		margin:auto;
-		width: 460px;
+		width: 370px;
 		background: rgba(243,243,243,.92);
 		float: right;
 	}	
