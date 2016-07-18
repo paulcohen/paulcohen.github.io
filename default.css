@@ -248,7 +248,9 @@
 	
 	.thumbnail-row img
 	{
-		display: inline-block;
+		width: 20%;
+		display: block;
+		float: left;
 	}
 
 /*********************************************************************************/
