@@ -190,8 +190,16 @@
 	.image-display
 	{
 		display: block;
-		background: #D3D3D3;
 		height: 400px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2em;
+	}
+	
+	.image-thumbnail
+	{
+		display: block;
+		height: 75px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 2em;
