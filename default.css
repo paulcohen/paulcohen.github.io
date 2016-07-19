@@ -242,8 +242,9 @@
 	
 	.thumnbail-row
 	{
-		max-width: 780px;
-		height: 75px;
+		margin: 0px auto;
+		background: #e4e4e4;
+		width: 780px;
 		text-align: center;
 	}
 	
@@ -252,7 +253,6 @@
 		position:relative;
 		display: inline-block;
 		float:left;
-		padding:10px;
 		height: 75px;
 	}
 
