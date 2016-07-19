@@ -194,16 +194,7 @@
 		height: 400px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-bottom: 2em;
-	}
-	
-	.image-thumbnail
-	{
-		display: block;
-		height: 75px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 	}
 	
 	.image-left
@@ -243,7 +234,7 @@
 	
 	.thumbnail-row
 	{
-		margin: 0px 1em;
+		margin: 0px 0.5em;
 		background: #e4e4e4;
 		height: 75px;
 	}
