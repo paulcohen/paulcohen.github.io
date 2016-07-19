@@ -242,15 +242,17 @@
 	
 	.thumnbail-row
 	{
-		margin: auto;
+		max-width: 780px;
 		height: 75px;
+		text-align: center;
 	}
 	
 	.thumbnail-row img
 	{
-		width: 20%;
-		display: block;
-		float: left;
+		position:relative;
+		display: inline-block;
+		float:left;
+		padding:10px;
 	}
 
 /*********************************************************************************/
