@@ -30,7 +30,8 @@
 	ol, ul
 	{
 		padding: 20px;
-		list-style: circle inside;
+		list-style: disc inside;
+		line-height: 180%;
 	}
 	
 	p
