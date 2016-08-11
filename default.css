@@ -29,7 +29,6 @@
 	
 	ol, ul
 	{
-		padding: 20px;
 		list-style: disc inside;
 		line-height: 180%;
 	}
