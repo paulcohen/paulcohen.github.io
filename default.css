@@ -501,6 +501,13 @@
 		background-size: cover;
 	}
 	
+	#banner-jetspinner
+	{
+		overflow: hidden;
+		padding: 7em 0em;
+		background: url(images/banner-jetspinner.jpg) no-repeat center;
+		background-size: cover;
+	}
 /*********************************************************************************/
 /* Wrapper                                                                       */
 /*********************************************************************************/
