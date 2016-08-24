@@ -11,7 +11,7 @@ Released   : 20131223
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Portfolio - Project</title> <!--CHANGE-->
+<title>Portfolio - Tabletop Router</title> 
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href='https://fonts.googleapis.com/css?family=Raleway|Josefin+Sans|Roboto' rel='stylesheet' type='text/css'>
@@ -46,39 +46,95 @@ Released   : 20131223
 </div>
 
 
-<div id="banner-petra"></div> <!--CHANGE-->
+<div id="router-banner-min.jpg"></div> 
 <div id="wrapper3">
-	<a name="Petra"></a> <!---CHANGE-->
+	<a name="Tabletop-Router"></a> 
 	<div id="page" class="container">
 		<div class="title">
-			<h3>Petra</h3> <!--CHANGE-->
+			<h3>Tabletop Router</h3> 
 		</div>
 		<div class="container2">
-			<a href="../images/Petra_in_hand.jpg" data-lightbox="gallery1" data-title="Caption"><img src="../images/Petra_in_hand.jpg" alt="" class="image image-display" /></a>
+			<a href="/images/sideview-min.JPG" data-lightbox="gallery1" data-title="A sneak peak at the (almost) finished machine."><img src="/images/sideview-min.JPG" alt="" class="image image-display" /></a>
 		</div>
 		<br>
 		<h2>Challenge</h2>
 		<br>
-		
+		<p>During my first semester at MIT I was introduced to the wonderful world of CNC tools, such as mills, lathes, 
+		routers, laser cutters, and 3D printers. Not wanting to go back to a life empty of such wonders, I decided in 
+		my second semester to build my own CNC router in ‘2.70 - Precision Product Design’ to help me keep designing and 
+		making things when I returned home to the UK. To start the design process, I set out a number of functional 
+		requirements for my router:
+		</p>
+		<ol>
+			<li>Can be dissasembled to fit inside a regular airline suitcase allowance (90x75x43cm)</li>
+			<li>Accurate to 0.1mm</li>
+			<li>$300 budget</li>
+			<li>Can cut both aluminium and wood </li>
+			<li>Fits standard router bits and attachments</li>
+			<li>Safe to use</li>
+		</ol>
+		<p>With a lot of tabletop CNC routers available to buy online already, the challenge was to design and build 
+		something that could perform on par with the current offerings, while avoiding the $1000+ price tags attached to them.
+		Achieving the target accuracy of 0.1mm meant creating a comprehensive error budget for my design.
+		</p>
 		<div class="container2">
+			<a href="images/error_bugdet.png" data-lightbox="gallery1" data-title="A snapshot of the overall results of an early error spreadsheet (20+ other sheets not shown, thankfully)."><img src="images/error_bugdet.png" alt="" class="image thumbnail-row" /></a>
+			<a href="images/calculations-min.jpg" data-lightbox="gallery1" data-title="Formulating the compliance matrices for each axis."><img src="images/calculations-min.jpg" alt="" class="image thumbnail-row" /></a>
+			<a href="images/first_iteration-min.JPG" data-lightbox="gallery1" data-title="A CAD model of the first ZY assembly. All solid modelling was done in Solidworks."><img src="images/first_iteration-min.JPG" alt="" class="image thumbnail-row" /></a>
 			<a href="images/" data-lightbox="gallery1" data-title="Caption"><img src="images/" alt="" class="image thumbnail-row" /></a>
-		</div>		
+		</div>
+		<p>The entire process is documented week-by-week on my blog - please have a look if you want a deeper look into my 
+		design process, including more scans from my notebook. 
+		</p>
 		<h2>Solution</h2>
 		<br>
-		<p>Texxxxxt right here.</p>
+		<p>My $300 budget forced me to be resourceful in the design of my machine. I identified the components which would
+		have to be bought in, such as the motors, power supply, leadscrews, and nuts and bolts. This left me with very 
+		little cash to play with. To keep the cost of the structure down, I relied on the abundance of T-slot aluminium 
+		extrusion on the MIT campus to make the main beams of the router. I also identified the bearings as the main source
+		of error (and cost) for my machine, and spent a long time developing DIY bearing concepts. The slides below show 
+		the progression of these designs.
+		</p>
 		<div class="container2">
-			<a href="images/" data-lightbox="gallery2" data-title="Caption"><img src="images/" alt="" class="image thumbnail-row" /></a>
+			<a href="images/Poster2.jpg" data-lightbox="gallery1" ><img src="images/Poster2.jpg" alt="" class="image thumbnail-row" /></a>
+			<a href="images/Poster3.jpg" data-lightbox="gallery1" ><img src="images/Poster3.jpg" alt="" class="image thumbnail-row" /></a>
+			<a href="images/Poster4.jpg" data-lightbox="gallery1" ><img src="images/Poster4.jpg" alt="" class="image thumbnail-row" /></a>
+			<a href="images/Poster5.jpg" data-lightbox="gallery1" ><img src="images/Poster5.jpg" alt="" class="image thumbnail-row" /></a>
+		</div>
+		<p>I settled on a V-and-flat arrangement with rolling wheels, then turned to my attention to the structure. I used 
+		an error budgeting spreadsheet to track the displacements and rotations due to applied forces through the structure,
+		splitting the structure into sections and using homogeneous transformation matrices to join them all together. A 
+		cartoon representation of the structure is shown in the slide below, showing the serial elements in the structural 
+		loop. By assigning a stiffness matrix to each element in my evolving design, I could trace the effects of design 
+		changes to the stiffness of the final machine. 
+		</p>
+		<p>I machined all the structural parts in MIT’s Hobbyshop. After making my first design iteration for the Y axis, 
+		I was forced back to the drawing board due to the excessive number of unique parts involved. This led to a great 
+		streamlining of assembly and increased stiffness.
+		</p>
+		<div class="container2">
+			<a href="images/assembly_diagram-min.jpg" data-lightbox="gallery1" data-title="Assembly diagrams like this were the driving force behind the redesign."><img src="images/assembly_diagram-min.jpg" alt="" class="image thumbnail-row" /></a>
+			<a href="images/Extrusion.PNG" data-lightbox="gallery1" data-title="One of the drawings used to make the redesigned ZY carriage. All structural pieces were designed, modelled, 
+			and fabricated in the MIT Hobbyshop by my fair hands."><img src="images/Extrusion.PNG" alt="" class="image thumbnail-row" /></a>
+			<a href="images/components-min.JPG" data-lightbox="gallery1" data-title="All the parts, ready to assemble."><img src="images/components-min.JPG" alt="" class="image thumbnail-row" /></a>
+			<a href="images/rail gluing-min.jpg" data-lightbox="gallery1" data-title="The Y-axis rail being epoxied in place, after a thorough clean with some (imported) IPA."><img src="images/rail gluing-min.jpg" alt="" class="image thumbnail-row" /></a>
+			<a href="images/drawings-min.JPG" data-lightbox="gallery1" data-title="The finished Y- and Z-axes required only 11 drawings. Top right shows the old carriage, with its pile of drawings."><img src="images/drawings-min.JPG" alt="" class="image thumbnail-row" /></a>
 		</div>	
 		<h2>Results</h2>
 		<br>
-		<p>More text here!</p>
+		<p>Time constraints limited me to only finish two of the three axes for my router, leaving the main bed and X-axis 
+		still to be fully designed and made. Preliminary tests of the Y- and Z-axes show good repeatability, with the axes 
+		responding to GCode commands correctly. With stock material still to hand, all that remains is to finish designing 
+		the bed and X-axis and fabricate the parts, before full testing can take place. Watch this space!
+		</p>
 		<div class="container2">
-			<a href="images/" data-lightbox="gallery3" data-title="Caption"><img src="images/" alt="" class="image thumbnail-row" /></a>
+			<a href="/images/full_z-min.JPG" data-lightbox="gallery1" data-title="Caption"><img src="/full_z-min.JPG" alt="" class="image image-display" /></a>
+		</div>
+		<div class="container2">
+			<a href="images/coupling-min.jpg" data-lightbox="gallery1" data-title="The stepper motor mounting includes a hole pattern for both NEMA 17 and 23 motors, to allow for later upgrades."><img src="images/coupling-min.jpg" alt="" class="image thumbnail-row" /></a>
+			<a href="images/arduino-min.JPG" data-lightbox="gallery1" data-title="The router is controlled by an Arduino flashed with GRBL, and uses NEMA 17 high-torque stepper motors."><img src="images/arduino-min.JPG" alt="" class="image thumbnail-row" /></a>
+			<a href="images/presenting-min.JPG" data-lightbox="gallery1" data-title="Presenting my machine to the rest of the class for 2.70 Precision Product Design."><img src="images/presenting-min.JPG" alt="" class="image thumbnail-row" /></a>
 		</div>	
-		<a href="http://web.mit.edu/2.009/www/interestMedia/final/final2015/yellow.html" target="_blank" class="button">
-		Final Presentation</a>
-		<a href="../Petra_brochure.pdf" target="_blank" class="button">
-		Brochure</a>
 		</div>
 	</div>
 </div>
