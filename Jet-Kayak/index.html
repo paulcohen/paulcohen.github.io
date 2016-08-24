@@ -11,7 +11,7 @@ Released   : 20131223
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Portfolio - Project</title> <!--CHANGE-->
+<title>Portfolio - Autonomous Jet-propelled Kayak</title> 
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href='https://fonts.googleapis.com/css?family=Raleway|Josefin+Sans|Roboto' rel='stylesheet' type='text/css'>
@@ -46,34 +46,65 @@ Released   : 20131223
 </div>
 
 
-<div id="banner-petra"></div> <!--CHANGE-->
+<div id="banner-kayak"></div> <!--CHANGE-->
 <div id="wrapper3">
-	<a name="Petra"></a> <!---CHANGE-->
+	<a name="Jet-Kayak"></a> <!---CHANGE-->
 	<div id="page" class="container">
 		<div class="title">
-			<h3>Petra</h3> <!--CHANGE-->
+			<h3>Autonomous Jet-propelled Kayak</h3> <!--CHANGE-->
 		</div>
 		<div class="container2">
-			<a href="images/" data-lightbox="gallery1" data-title="Caption"><img src="images/" alt="" class="image image-display" /></a>
+			<a href="images/profile-min.jpg" data-lightbox="gallery1" data-title="Caption"><img src="images/profile-min.jpg" alt="" class="image image-display" /></a>
 		</div>
 		<br>
 		<h2>Challenge</h2>
 		<br>
-		
-		<div class="container2">
-			<a href="images/" data-lightbox="gallery1" data-title="Caption"><img src="images/" alt="" class="image thumbnail-row" /></a>
-		</div>		
+		<p>Autonomous vehicles have been around for a long while now, as have the algorithms used to make their controllers. 
+		As part of ‘2.017 - Design of Electromechanical Robotic Systems’ we were tasked with making use of random process 
+		modelling to inform such a controller in a novel setting.
+		</p>
+		<p>Waterjet powered craft presented an interesting case. In a team of 5, we set out an objective to use a spectral 
+		description of waves to help our controller drive a jet-propelled craft at a constant heading. We identified this 
+		as the first step in making a fully autonomous waterjet-propelled craft, with applications for jetskis and in flood 
+		disaster relief.
+		</p>
 		<h2>Solution</h2>
 		<br>
-		<p>Texxxxxt right here.</p>
+		<p>This project was split into hardware and software. <a href="https://lsaintmakesthings.wordpress.com/">Lauren St Hilaire</a>
+		and I took on the hardware side, while Ava, Alicia and Lauren F worked on the sensors and controller. We conducted a 
+		literature review to learn more about the dynamics of waterjets, using SFME calculations to characterise a small 
+		off-the-shelf impeller unit. We designed a sheet metal part to mount the motor, impeller, and servomotor, which 
+		could then be easily attached to the kayak using two bolts.
+		</p>
+		<p>The controller team used a Nucleo microcontroller to handle the computing, as the regular Arduino had insufficient
+		power and too few inputs for our needs. We also got a giant rubber duck to act as our preliminary test platform 
+		for the sensors + controller, which doubled as a handy mascot. We chose a 9 DOF IMU as our sole sensor.
+		</p>
+		<p>The heading was calculated using a Crank-Nicolson algorithm to integrate acceleration data from the IMU, and 
+		was then filtered using a Bilinear Transform. Initially, we also used data from the magnetometer to try and correct
+		for drift, but dropped it after we were unable to get useful readings. Our controller used spectral data for the 
+		waves in the river to inform the controller, in order to balance the tracking of the controller with its ability 
+		to reject disturbances.
+		</p>
 		<div class="container2">
-			<a href="images/" data-lightbox="gallery2" data-title="Caption"><img src="images/" alt="" class="image thumbnail-row" /></a>
+			<a href="images/electronics_BOM.png" data-lightbox="gallery1" data-title="The electronics BOM."><img src="images/electronics_BOM.png" alt="" class="image thumbnail-row" /></a>
+			<a href="images/duck.gif" data-lightbox="gallery1" data-title="Our mascot, complete with mini impeller and servo controller."><img src="images/duck.gif" alt="" class="image thumbnail-row" /></a>
+			<a href="images/thrust_calcs.png" data-lightbox="gallery1" data-title="Calculating the thrust and nozzle forces, for spec’ing the servo."><img src="images/thrust_calcs.png" alt="" class="image thumbnail-row" /></a>
+			<a href="images/sketch_diagram-min.JPG" data-lightbox="gallery1" data-title="A sketch from my notebook, showing a rough layout of the different systems."><img src="images/sketch_diagram-min.JPG" alt="" class="image thumbnail-row" /></a>
+			<a href="images/waterjet-min.JPG" data-lightbox="gallery1" data-title="Waterjetting the sheet metal housing."><img src="images/waterjet-min.JPG" alt="" class="image thumbnail-row" /></a>
+			<a href="images/components-min.JPG" data-lightbox="gallery1" data-title="All the hardware ready for assembly."><img src="images/components-min.JPG" alt="" class="image thumbnail-row" /></a>
 		</div>	
 		<h2>Results</h2>
 		<br>
-		<p>More text here!</p>
+		<p>We were able to run our kayak in a straight line for 15 meters (the length of the dock) in small waves. This 
+		validated the first steps of creating a full autonomous controller, and served as a proof-of-concept for an autonomous
+		waterjet-propelled vessel. We presented our project at the MIT Mechanical Engineering Department DeFlorez Awards,
+		and received an honourable mention for our work.
+		</p>
 		<div class="container2">
-			<a href="images/" data-lightbox="gallery3" data-title="Caption"><img src="images/" alt="" class="image thumbnail-row" /></a>
+			<a href="images/jet_unit-min.jpg" data-lightbox="gallery1" data-title="The jet unit mounted and ready to go. "><img src="images/jet_unit-min.jpg" alt="" class="image image-display" /></a>
+			<a href="images/control_box-min.JPG" data-lightbox="gallery1" data-title="The electronics box housed the microcontroller, IMU, motor controller, and batteries for the system. Switches were added to easily isolate the power and run test programs."><img src="images/control_box-min.JPG" alt="" class="image thumbnail-row" /></a>
+			<a href="images/dockside-min.JPG" data-lightbox="gallery1" data-title="A very long USB cable allowed Ava to update the test program at the dockside, while soaking up the sun."><img src="images/dockside-min.JPG" alt="" class="image thumbnail-row" /></a>
 		</div>	
 		</div>
 	</div>
