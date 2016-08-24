@@ -508,6 +508,14 @@
 		background: url(images/banner-jetspinner.jpg) no-repeat center;
 		background-size: cover;
 	}
+	
+	#banner-router
+	{
+		overflow: hidden;
+		padding: 7em 0em;
+		background: url(images/router-banner-min.jpg) no-repeat center;
+		background-size: cover;
+	}
 /*********************************************************************************/
 /* Wrapper                                                                       */
 /*********************************************************************************/
