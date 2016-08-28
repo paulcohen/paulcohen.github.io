@@ -11,7 +11,7 @@ Released   : 20131223
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Projects - Scantling Library</title>
+<title>Portfolio - Scantling Library</title> <!--CHANGE-->
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href='https://fonts.googleapis.com/css?family=Raleway|Josefin+Sans|Roboto' rel='stylesheet' type='text/css'>
@@ -19,6 +19,9 @@ Released   : 20131223
 <link href="../fonts.css" rel="stylesheet" type="text/css" media="all" />
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+<!-- The code below implements the lightbox effect -->
+<link href="../dist/css/lightbox.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -36,39 +39,47 @@ Released   : 20131223
 				<li><a href="../#projects" accesskey="2" title="">My Projects</a></li>
 				<li><a href="../About" accesskey="3" title="">About Me</a></li>
 				<li><a href="https://pauljcohen.wordpress.com/" target="_blank" accesskey="5" title="">Blog</a></li>
+				<li><a href="../Cohen P CV.pdf" target="_blank" accesskey="6" title="">Curriculum Vitae</a></li>
 			</ul>
 		</div>
 	</div>
 	<a name="banner"></a>
 </div>
 
-<div id="banner-scantling"></div>
+
+<div id="banner-scantling"></div> 
 <div id="wrapper3">
 	<a name="Scantling"></a>
-	<div id="2column" class="container">
+	<div id="page" class="container">
 		<div class="title">
-			<h3>Scantling library</h3>
+			<h3>Scantling Library</h3>
 		</div>
-		<div class="row">
-        <div class="column1_2">
-			<div class="box"> <a href="#"><img src="../images/scantling1.jpg" alt="" class="image image-full" /></a>
-			</div>
-			<div class="box"> <a><img src="../images/scantling2.jpg" alt="" class="image image-full" /></a>
-			</div>
+		<div class="container2">
+			<a href="../images/scantling1.jpg" data-lightbox="gallery1"><img src="../images/scantling1.jpg" alt="" class="image image-display" /></a>
+			<a href="../images/scantling2.jpg" data-lightbox="gallery1"><img src="../images/scantling2.jpg" alt="" class="image thumbnail-row" /></a>
 		</div>
-		<div class="column2_2">
-			<h2>Keeping track of structural members in a 5,000 ton jack-up barge can be hard work</h2>
-			<br>
-			<p>Fortunately, a well-designed spreadsheet can make the process a whole lot easier. During my time at Global Maritime, I gave their scantling spreadsheet a reboot. The spreadsheet acts as a library of the different structural members that would be used in one of the ships they were building, to keep track of what is being used.
-			</p>
-			<p>What's more, when the designer decides to use a certain size of stiffener, I-beam, or column, the spreadsheet can perform automatic checks against rules and regulations set out by the American Bureau of Shipping (ABS) and alerts them if their chosen member doesn't pass the test.
-			</p>
-			<p>I was tasked with double checking these automatic calculations against the specifications, as well as improving the usability of the library. I added a macro-enabled filtering function, allowing the designer to immediately find the structural member that would fit their requirements. 
-			</p>
-			<p>I also tweaked and tuned the little things: I created columns with intermediate calculations that usually remained hidden, keeping the library streamlined but allowing for easy quality control; I also sketched out a dimension convention for the different member shapes so othat the designer knew exactly what size and stiffness they would be selecting; finally, I chose the colour scheme to intuitively indicate which cells required input, and locked the rest to make sure a stray click would not break anything.
-			</p>
-			</div>
-		</div>
+		<br>
+		<h2>Keeping track of structural members in a 5,000 ton jack-up barge can be hard work</h2>
+		<br>
+		<p>Fortunately, a well-designed spreadsheet can make the process a whole lot easier. During my time at Global 
+		Maritime, I gave their scantling spreadsheet a reboot. The spreadsheet acts as a library of the different structural
+		members that would be used in one of the ships they were building, to keep track of what is being used.
+		</p>	
+		<p>What's more, when the designer decides to use a certain size of stiffener, I-beam, or column, the spreadsheet 
+		can perform automatic checks against rules and regulations set out by the American Bureau of Shipping (ABS) and
+		alerts them if their chosen member doesn't pass the test.
+		</p>
+		<p>I was tasked with double checking these automatic calculations against the specifications, as well as improving
+		the usability of the library. I added a macro-enabled filtering function, allowing the designer to immediately 
+		find the structural member that would fit their requirements. 
+		</p>
+		<p>I also tweaked and tuned the little things: I created columns with intermediate calculations that usually
+		remained hidden, keeping the library streamlined but allowing for easy quality control; I also sketched out a 
+		dimension convention for the different member shapes so othat the designer knew exactly what size and stiffness 
+		they would be selecting; finally, I chose the colour scheme to intuitively indicate which cells required input, 
+		and locked the rest to make sure a stray click would not break anything.
+		</p>		
+	
 		</div>
 	</div>
 </div>
@@ -82,5 +93,7 @@ Released   : 20131223
 			<li><a href="https://pauljcohen.wordpress.com/" class="icon icon-wordpress"><span>Wordpress</span></a></li>
 		</ul>
 </div>
+<!-- This is the other part of the lightbox thang -->
+<script src="../dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
