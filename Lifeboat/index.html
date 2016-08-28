@@ -11,7 +11,7 @@ Released   : 20131223
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
+<title>Portfolio - Parametric Lifeboat</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href='https://fonts.googleapis.com/css?family=Raleway|Josefin+Sans|Roboto' rel='stylesheet' type='text/css'>
@@ -19,6 +19,9 @@ Released   : 20131223
 <link href="../fonts.css" rel="stylesheet" type="text/css" media="all" />
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+<!-- The code below implements the lightbox effect -->
+<link href="../dist/css/lightbox.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -36,35 +39,34 @@ Released   : 20131223
 				<li><a href="../#projects" accesskey="2" title="">My Projects</a></li>
 				<li><a href="../About" accesskey="3" title="">About Me</a></li>
 				<li><a href="https://pauljcohen.wordpress.com/" target="_blank" accesskey="5" title="">Blog</a></li>
+				<li><a href="../Cohen P CV.pdf" target="_blank" accesskey="6" title="">Curriculum Vitae</a></li>
 			</ul>
 		</div>
 	</div>
 	<a name="banner"></a>
 </div>
 
+
 <div id="wrapper3">
-	<a name="Lifeboat"></a>
-	<div id="2column" class="container">
+	<a name="Lifeboat"></a> 
+	<div id="page" class="container">
 		<div class="title">
-			<h3>Parametric Lifeboat</h3>
+			<h3>Parametric Lifeboat</h3> 
 		</div>
-		<div class="row">
-        <div class="column1_2">
-			<div class="box"> <a href="#"><img src="../images/Lifeboat_render.JPG" alt="" class="image image-full" /></a>
-			</div>
+		<div class="container2">
+			<a href="../images/Lifeboat_render.JPG" data-lightbox="gallery1"><img src="../images/Lifeboat_render.JPG" alt="" class="image image-display" /></a>
 		</div>
-		<div class="column2_2">
-			<h2>Create your perfect lifeboat in 5 easy steps</h2>
-			<br>
-			<p>During my internship at Global Maritime, I made a number of parametric models, where all the 
-			dimensions are driven by a small number of key parameters.</p>
-			<p>This model of a lifeboat, modelled on the Norsafe Davit range, can be resized with the use of 
-			3 key parameters. This allows the user to create a 'looks-like' model of their chosen size of 
-			lifeboat in seconds, saving valuable time.
-			</p>
-			<p>I created the model using Autodesk Inventor using top-down modelling techniques.</p>
-			</div>
-		</div>
+		<br>
+		<h2>Create your perfect lifeboat in 5 easy steps</h2>
+		<br>
+		<p>During my internship at Global Maritime, I made a number of parametric models, where all the 
+		dimensions are driven by a small number of key parameters.</p>	
+		<p>This model of a lifeboat, modelled on the Norsafe Davit range, can be resized with the use of 
+		3 key parameters. This allows the user to create a 'looks-like' model of their chosen size of 
+		lifeboat in seconds, saving valuable time.
+		</p>
+		<p>I created the model using Autodesk Inventor using top-down modelling techniques.
+		</p>
 		</div>
 	</div>
 </div>
@@ -78,5 +80,7 @@ Released   : 20131223
 			<li><a href="https://pauljcohen.wordpress.com/" class="icon icon-wordpress"><span>Wordpress</span></a></li>
 		</ul>
 </div>
+<!-- This is the other part of the lightbox thang -->
+<script src="../dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
