@@ -11,7 +11,7 @@ Released   : 20131223
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Projects - Integrated Design Project</title>
+<title>Portfolio - Integrated Design Project</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href='https://fonts.googleapis.com/css?family=Raleway|Josefin+Sans|Roboto' rel='stylesheet' type='text/css'>
@@ -19,6 +19,9 @@ Released   : 20131223
 <link href="../fonts.css" rel="stylesheet" type="text/css" media="all" />
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+<!-- The code below implements the lightbox effect -->
+<link href="../dist/css/lightbox.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -43,34 +46,38 @@ Released   : 20131223
 	<a name="banner"></a>
 </div>
 
+
 <div id="wrapper3">
-	<a name="IDP"></a>
-	<div id="2column" class="container">
+	<a name="IDP"></a> <!---CHANGE-->
+	<div id="page" class="container">
 		<div class="title">
-			<h3>Integrated Design Project</h3>
+			<h3>Integrated Design Project</h3> <!--CHANGE-->
 		</div>
-		<div class="row">
-        <div class="column1_2">
-			<div class="box"> <a href="#"><img src="../images/idp_software_flowchart1.jpg" alt="" class="image image-full" /></a>
-			</div>
-			<div class="box"> <a href="#"><img src="../images/idp_software_flowchart2.jpg" alt="" class="image image-full" /></a>
-			</div>
+		<div class="container2">
+			<a href="../images/idp_software_flowchart1.jpg" data-lightbox="gallery1" data-title="The flowchart detailing our control scheme."><img src="../images/idp_software_flowchart1.jpg" alt="" class="image image-display" /></a>
+			<a href="../images/idp_software_flowchart2.jpg" data-lightbox="gallery1" data-title="The flowchart detailing our control scheme."><img src="../images/idp_software_flowchart2.jpg" alt="" class="image image-display" /></a>
 		</div>
-		<div class="column2_2">
-			<h2>An autonomous line following robot, programmed in C++</h2>
-			<br>
-			<p>For my second year Integrated Design Project, I worked in a team of 6 to design and build an autonomous line following robot.
-			</p>
-			<p>I worked with a partner on writing the software for our robot in C++. The task for the robot was to collect, identify, and deposit small parcels at different locations based on their colour or weight. Our program had to be robust and reliable, to deal with errors with the sensors and irregularities with the motors. 
-			</p>
-			<p>Before we could write the code, we had to decide which sensors and actuators we could use to best implent our strategy and basic design concept. We ended up with an array of infrared sensors for the line-following, a couple of microswitches to get feedback from the collection mechanism, and a light sensor to identify the parcels.
-			</p>
-			<p>The pictures opposite show how we designed our system, with each colour indicating a different source file. This clear layout of the software structure allowed us to work in parallel on the code, allowing us plenty of time to debug, test, and calibrate our program.
-			</p>
-			<p>Our code proved the most reliable in the class, due to the extensive testing and refinement that we were able to do. In the final time-limited competition, our robot placed 3rd out of 12.
-			</p>
-			</div>
-		</div>
+		<br>
+		<h2>An autonomous line following robot, programmed in C++</h2>
+		<br>
+		<p>For my second year Integrated Design Project, I worked in a team of 6 to design and build an autonomous line following 
+		robot.
+		</p>
+		<p>I worked with a partner on writing the software for our robot in C++. The task for the robot was to collect, 
+		identify, and deposit small parcels at different locations based on their colour or weight. Our program had to be 
+		robust and reliable, to deal with errors with the sensors and irregularities with the motors. 
+		</p>
+		<p>Before we could write the code, we had to decide which sensors and actuators we could use to best implent our 
+		strategy and basic design concept. We ended up with an array of infrared sensors for the line-following, a couple 
+		of microswitches to get feedback from the collection mechanism, and a light sensor to identify the parcels.
+		</p>
+		<p>The pictures above show how we designed our system, with each colour indicating a different source file. This
+		clear layout of the software structure allowed us to work in parallel on the code, allowing us plenty of time to 
+		debug, test, and calibrate our program.
+		</p>	
+		<p>Our code proved the most reliable in the class, due to the extensive testing and refinement that we were able 
+		to do. In the final time-limited competition, our robot placed 3rd out of 12.
+		</p>		
 		</div>
 	</div>
 </div>
@@ -84,5 +91,9 @@ Released   : 20131223
 			<li><a href="https://pauljcohen.wordpress.com/" class="icon icon-wordpress"><span>Wordpress</span></a></li>
 		</ul>
 </div>
+<!-- This is the other part of the lightbox thang -->
+<script src="../dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
+Contact GitHub API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Securi
