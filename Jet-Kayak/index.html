@@ -72,9 +72,14 @@ Released   : 20131223
 		<br>
 		<p>This project was split into hardware and software. <a href="https://lsaintmakesthings.wordpress.com/">Lauren St Hilaire</a>
 		and I took on the hardware side, while Ava, Alicia and Lauren F worked on the sensors and controller. We conducted a 
-		literature review to learn more about the dynamics of waterjets, using SFME calculations to characterise a small 
-		off-the-shelf impeller unit. We designed a sheet metal part to mount the motor, impeller, and servomotor, which 
-		could then be easily attached to the kayak using two bolts.
+		literature review to learn more about the dynamics of waterjets, using SFME calculations to characterise a small, 
+		off-the-shelf impeller unit and provide a starting point to spec out the other pieces of hardware - making sure the 
+		electric motor had the right kV rating to spin at the required speed, getting a servo that was big enough to turn 
+		the nozzle, and getting a shaft coupling that could cope with the high rotation speed. Allowing more time for this 
+		design phase of the project avoided unforeseen problems later on, as all the components we bought in worked together 
+		first time. We also designed a sheet metal part to mount the motor, impeller, and servomotor, which could then be 
+		easily attached to the kayak using two bolts. Our first iteration of the housing was not stiff enough to resists the 
+		thrust force from the impeller, but the simple one-piece construction allowed us to update the design quickly.
 		</p>
 		<p>The controller team used a Nucleo microcontroller to handle the computing, as the regular Arduino had insufficient
 		power and too few inputs for our needs. We also got a giant rubber duck to act as our preliminary test platform 
