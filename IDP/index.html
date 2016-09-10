@@ -11,7 +11,7 @@ Released   : 20131223
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Portfolio - Integrated Design Project</title>
+<title>Portfolio - Line-following Delivery Robot</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href='https://fonts.googleapis.com/css?family=Raleway|Josefin+Sans|Roboto' rel='stylesheet' type='text/css'>
@@ -51,7 +51,7 @@ Released   : 20131223
 	<a name="IDP"></a> <!---CHANGE-->
 	<div id="page" class="container">
 		<div class="title">
-			<h3>Integrated Design Project</h3> <!--CHANGE-->
+			<h3>Line-following Delivery Robot</h3> <!--CHANGE-->
 		</div>
 		<div class="container2">
 			<a href="../images/idp_software_flowchart1.jpg" data-lightbox="gallery1" data-title="The flowchart detailing our control scheme."><img src="../images/idp_software_flowchart1.jpg" alt="" class="image image-display" /></a>
@@ -60,23 +60,50 @@ Released   : 20131223
 		<br>
 		<h2>An autonomous line following robot, programmed in C++</h2>
 		<br>
-		<p>For my second year Integrated Design Project, I worked in a team of 6 to design and build an autonomous line following 
-		robot.
+		<p>For my second year Integrated Design Project, I worked in a team of 6 to design and build an autonomous line 
+		following robot, to take part in a timed challenge.
 		</p>
 		<p>I worked with a partner on writing the software for our robot in C++. The task for the robot was to collect, 
 		identify, and deposit small parcels at different locations based on their colour or weight. Our program had to be 
 		robust and reliable, to deal with errors with the sensors and irregularities with the motors. 
 		</p>
-		<p>Before we could write the code, we had to decide which sensors and actuators we could use to best implent our 
-		strategy and basic design concept. We ended up with an array of infrared sensors for the line-following, a couple 
-		of microswitches to get feedback from the collection mechanism, and a light sensor to identify the parcels.
+		<h2>Solution</h2>
+		<br>
+		<p>The pictures above show how we designed our control scheme, with each colour indicating a different source file. 
+		This clear layout of the software structure allowed us to work in parallel on the code, allowing us plenty of time 
+		to debug, test, and calibrate our program. 
 		</p>
-		<p>The pictures above show how we designed our system, with each colour indicating a different source file. This
-		clear layout of the software structure allowed us to work in parallel on the code, allowing us plenty of time to 
-		debug, test, and calibrate our program.
-		</p>	
-		<p>Our code proved the most reliable in the class, due to the extensive testing and refinement that we were able 
-		to do. In the final time-limited competition, our robot placed 3rd out of 12.
+		<p>For the line following, parcel detection, and parcel collection/ delivery, we had a choice of sensors and actuators:
+		</p>
+		<ul>
+			<li>Infrared: good for high-contrast, two-state detection. We used 3 for our line following, giving us 6 
+			possible states. A 4th was used to assist with turning corners.</li>
+			<li>Strain gauges: Gives analog output, allowing for multiple possible states. We originally used this to 
+			identify the parcel by weight, but the frequent need for calibration made them too unreliable.</li>
+			<li>Light sensors: Also gives analog output. After the strain gauge proved too inconsistent, our design was 
+			modified to use a light sensor instead. </li>
+			<li>Microswitches: These provided our main back-up checks: has the robot reached a wall? Has it collected 
+			to parcel successfully? We used these to activate ‘recovery’ functions, allowing for uncertainties during 
+			the run.</li>
+			<li>Pneumatics: We used a two-state pneumatic actuator to handle the parcel drop-off, for its reliable linear 
+			motion.</li>
+			<li>Servo: A servo motor was used to rotate the collection arm for parcels at 90 degrees.</li>
+		</ul>
+		<p>
+		We ran intermediate tests on the separate modules in the code to spots bugs early, and regular team meetings meant 
+		the electrical, mechanical and software teams could work through problems collaboratively. Our ‘recovery’ functions 
+		set us apart from other teams, as we were able to cope with a number of possible circumstances: 
+		</p>
+		<ul>
+			<li>Losing the line completely (a ‘000’ state from the infrared sensors)</li>
+			<li>Missing the parcel (microswitch)</li>
+		</ul>
+		<h2>Results</h2>
+		<br>
+		<p>The late change from strain gauge to light sensor caused problems in the final competition: the collection arm 
+		had been made deliberately thin to give larger strain readings, which made it susceptible to bending. An impact 
+		during the competition misaligned the arm, ruining our otherwise perfect run, placing us 3rd out of 12. Testing 
+		of the sensors for their reliability before integration would have helped to identify the strain gauge issues earlier.
 		</p>		
 		</div>
 	</div>
