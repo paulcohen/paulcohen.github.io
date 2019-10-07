@@ -524,6 +524,14 @@
 		background: url(images/sketch_diagram-min.JPG) no-repeat center;
 		background-size: cover;
 	}
+
+	#banner-NC4K
+	{
+		overflow: hidden;
+		padding: 7em 0em;
+		background: url(images/profile-min.jpg) no-repeat center;
+		background-size: cover;
+	}
 /*********************************************************************************/
 /* Wrapper                                                                       */
 /*********************************************************************************/
