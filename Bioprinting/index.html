@@ -68,8 +68,46 @@ Released   : 20131223
 		<br>
 		<h2>Background</h2>
 		<br>
-    <p>Coming soon
-
+    		<p>The petri dish is a stalwart of biological research – cells can be cultured repeatably and in large quantities, 
+		allowing statistically significant conclusions to be drawn. However, these conclusions are fundamentally 
+		limited by the petri dish’s simplicity. Performing experiments on cells in a 2D, homogenous culture will 
+		inform the researcher how they respond in this environment, but the human body is full of much more complex 			structures, and these dictate how cells move and divide. The rapid development of 3D-printing technologies, 
+		capable of ever greater precision and repeatability, offers a chance to introduce these structures into our 
+		test mediums and enhance biological research.
+		</p>	
+		<h2>Challenge</h2>
+		<br>
+		<p>My master’s project at Cambridge was focused on developing an open-source biofabrication platform that combines 
+		conventional Fused Deposition Modelling (FDM) 3D-printing with a novel technique for creating nanometre-sized 
+		fibres, known as Low-voltage Electrospinning Patterning (LEP). This platform had been created by modifying an 
+		Ultimaker 3D printer by members of the research group, but they were struggling to achieve consistent results. 
+		The project therefore split into a few areas:
+		<ul>
+			<li>Improving the repeatability of the tool-change procedure for the printer.</li>
+			<li>Create a diagnostic test to measure the repeatability of this procedure.</li>
+			<li>Optimise variables to ensure reliable prints incorporating both processes.</li>
+		</ul>
+		The tool change procedure can be seen the video in the photo gallery.
+		<\p>
+		<h2>Solution</h2>
+		<br>
+		<p>The existing connection between the printer carriage relied on a magnetic coupling using 4 cone features that fit 
+			into 4 holes, which did not always return to the same position with each tool change. I redesigned this to use 
+			a ‘kinematic’ coupling – essentially, this mean having 6 points of contact to exactly constrain the 6 degrees 
+			of freedom in 3 dimensions. 
+		</p>
+		<p>I then had to develop a diagnostic test to validate the new design. I used a camera with a macro lens to capture the 
+			position of the tool-head relative to a datum, then repeated the tool-change procedure 50 times, taking a photo 
+			each time. I wrote a program in Matlab to process these images and measure the distance from the tool-tip to the 
+			datum, and then produce a histogram of the results.
+		</p>
+		<p>Running this test on both the old and new designs, the improvements were drastic. The image below shows the 
+			reduction in the spread in the Y-axis direction. 
+		</p>
+		<p>With this new design, I was able to perform many trials to optimise the print settings in the firmware. This allowed 
+			us to produce dual-process prints of much greater complexity, an important step towards the production of more 
+			advanced culture mediums.
+		</p>
 		<div class="container2">
 			<a href="images/.jpg" data-lightbox="gallery1" data-title=""><img src="images/.jpg" alt="" class="image thumbnail-row" /></a>
       <a href="images/.jpg" data-lightbox="gallery1" data-title=""><img src="images/.jpg" alt="" class="image thumbnail-row" /></a>
