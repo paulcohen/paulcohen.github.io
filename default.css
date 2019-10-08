@@ -531,6 +531,14 @@
 		background: url(images/lofoton-banner-min.jpg) no-repeat center;
 		background-size: cover;
 	}
+
+	#banner-bioprinting
+	{
+		overflow: hidden;
+		padding: 7em 0em;
+		background: url(images/fibres-banner.jpg) no-repeat center;
+		background-size: cover;
+	}
 /*********************************************************************************/
 /* Wrapper                                                                       */
 /*********************************************************************************/
